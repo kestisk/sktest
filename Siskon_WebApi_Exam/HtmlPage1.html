@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Service/Common.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        function joinGroup() {
+            //var request = getBaseRequest();
+            //request.GroupReference = getQueryStringParameterByName(GROUP_REF_PARAMETER_NAME);
+            //request.UserId = getCurrentUserId();
+            debugger;
+            makeAjaxGetRequest(API_BASE_ADDRESS, successfull);
+        }
+        function successfull(response) {
+            debugger;
+            document.getElementById("sk").innerHTML = response[0].NAME;
+        }
+    </script>
+</head>
+<body>
+    <form class="form-auth-small" id="formForgotPwd" action="">
+        <div class="form-group">
+            <p>Sayın : <span id="nameSurname">kullanıcımız</span></p>
+            <p>Aşağıda bilgileri verilen gruba katılım için bir davet aldınız.</p>
+            <p>Grup Referans Bilgisi : <span id="groupRef"></span></p>
+            <p>Gruba katılmak için butona tıklayınız.</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="joinGroup();"><i class="fa fa-plus"></i> GRUBA KATIL</button>
+        <div class="bottom">
+            <span class="helper-text">Gruba katılımınız gerçekleştiğinde profil sayfasına otomatik yönlendirileceksiniz.</span>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+           
+            <li class="dropdown">
+               
+                <ul>
+                    <li id="sk"></li>
+                    <li id="sk1"></li>
+                </ul>
+            </li>
+           
+        </ul>
+    </form>
+</body>
+</html>
