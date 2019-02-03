@@ -4,15 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7629d30804cf4876a045c22b58b0a2ee" Name="Diagram1">
-        <EntityTypeShape EntityType="CoreProModel.C__EFMigrationsHistory" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoreProModel.Feature" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoreProModel.Make" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoreProModel.Model" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoreProModel.Vehicle" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="CoreProModel.FK_Models_Makes_MakeId" ManuallyRouted="false" />
-        <AssociationConnector Association="CoreProModel.FK_Vehicle_Models_ModelId" ManuallyRouted="false" />
-        <AssociationConnector Association="CoreProModel.VehicleFeature" ManuallyRouted="false" />
+      <Diagram DiagramId="aa723d774616474b98afcc2737a8212b" Name="Diagram1">
+        <EntityTypeShape EntityType="SiskonModel.Vehicle" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

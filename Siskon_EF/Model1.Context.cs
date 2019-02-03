@@ -13,10 +13,10 @@ namespace Siskon_EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CoreProEntities : DbContext
+    public partial class SiskonEntities2 : DbContext
     {
-        public CoreProEntities()
-            : base("name=CoreProEntities")
+        public SiskonEntities2()
+            : base("name=SiskonEntities2")
         {
         }
     
@@ -25,10 +25,6 @@ namespace Siskon_EF
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<C__EFMigrationsHistory> C__EFMigrationsHistory { get; set; }
-        public virtual DbSet<Feature> Features { get; set; }
-        public virtual DbSet<Make> Makes { get; set; }
-        public virtual DbSet<Model> Models { get; set; }
         public virtual DbSet<Vehicle> Vehicles { get; set; }
     }
 }

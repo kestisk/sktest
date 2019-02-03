@@ -93,14 +93,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="Service\Common.js" />
+    <Content Include="Index.html" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\Vehicle.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\PostskController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\VehicleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -126,6 +126,10 @@
     <ProjectReference Include="..\Siskon_EF\Siskon_EF.csproj">
       <Project>{150f2911-2aba-41e6-8a23-bc95fe292b35}</Project>
       <Name>Siskon_EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vehicle.Common\Vehicle.Common.csproj">
+      <Project>{c7fd494b-02f3-482d-99e6-0342b130cf05}</Project>
+      <Name>Vehicle.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

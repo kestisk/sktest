@@ -15,10 +15,10 @@ namespace Siskon_WebApi_Exam
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+               name: "DefaultApi",
+               routeTemplate: "api/{controller}/{action}/{paramList}",
+               defaults: new { paramList = RouteParameter.Optional }
+           );
         }
     }
 }

@@ -14,22 +14,14 @@ namespace Siskon_EF
     
     public partial class Vehicle
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Vehicle()
-        {
-            this.Features = new HashSet<Feature>();
-        }
-    
-        public int Id { get; set; }
-        public int ModelId { get; set; }
-        public bool IsRegistered { get; set; }
-        public string ContactName { get; set; }
-        public string ContactEmail { get; set; }
-        public string ContactPhone { get; set; }
-        public System.DateTime LastUpdate { get; set; }
-    
-        public virtual Model Model { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Feature> Features { get; set; }
+        public string Plate { get; set; }
+        public string Nickname { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public string Year { get; set; }
+        public bool IsActive { get; set; }
+        public string Type { get; set; }
+        public string Color { get; set; }
+        public long Id { get; set; }
     }
 }
